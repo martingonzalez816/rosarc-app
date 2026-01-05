@@ -1,0 +1,20 @@
+{
+  "name": "Ros-Arc Repartos",
+  "short_name": "Ros-Arc",
+  "start_url": "https://script.google.com/macros/s/AKfycbw_LPLFO3A3bbixZgMhjg3e-u8N-XEznCojHMIRLiNpjlYcl5cEhNUtRbmFcZ2OgVdz/exec",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057B8",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
