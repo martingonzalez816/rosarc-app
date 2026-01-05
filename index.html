@@ -8,17 +8,13 @@
   <link rel="manifest" href="manifest.json">
 
   <!-- ICONOS -->
-  <link rel="icon" type="image/png" sizes="192x192" href="icono-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icono-512.png">
+  <link rel="icon" sizes="192x192" href="icono-192.png">
+  <link rel="icon" sizes="512x512" href="icono-512.png">
   <link rel="apple-touch-icon" href="icono-512.png">
 
-  <!-- META -->
   <meta name="theme-color" content="#0057B8">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <!-- VIEWPORT (clave para tamaño correcto) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <style>
     html, body {
@@ -28,28 +24,33 @@
       height: 100%;
       overflow: hidden;
       background: #fff;
-      font-family: Arial, sans-serif;
     }
 
-    /* IFRAME FULL SCREEN REAL */
+    /* Contenedor */
+    #wrap {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* IFRAME ESCALADO */
     iframe {
+      width: 111%;
+      height: 111%;
       border: none;
-      width: 100vw;
-      height: 100vh;
-      display: block;
-    }
 
-    /* Quita efectos raros en mobile */
-    * {
-      -webkit-tap-highlight-color: transparent;
+      transform: scale(0.9);
+      transform-origin: top left;
     }
   </style>
 </head>
 
 <body>
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbw_LPLFO3A3bbixZgMhjg3e-u8N-XEznCojHMIRLiNpjlYcl5cEhNUtRbmFcZ2OgVdz/exec"
-    allowfullscreen>
-  </iframe>
+  <div id="wrap">
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbw_LPLFO3A3bbixZgMhjg3e-u8N-XEznCojHMIRLiNpjlYcl5cEhNUtRbmFcZ2OgVdz/exec"
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
